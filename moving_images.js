@@ -3,8 +3,8 @@ const ctx = canvas.getContext("2d");
 
 function drawCartesian() {
     
-    var centerX = canvas.width / 2;
-    var centerY = canvas.height / 2;
+    let centerX = canvas.width / 2;
+    let centerY = canvas.height / 2;
 
     ctx.beginPath();
     ctx.strokeStyle = 'black';
@@ -46,15 +46,11 @@ function drawCartesian() {
     ctx.lineTo(470, centerY - 10);
     ctx.moveTo(470, centerY - 20);
     ctx.lineTo(460, centerY - 10);
-
     ctx.moveTo(centerX + 20, 20);
     ctx.lineTo(centerX + 15, 10);
     ctx.moveTo(centerX + 25, 10);
     ctx.lineTo(centerX + 17, 25);
-    
     ctx.stroke();
-    //ctx.moveTo(centerX, )
-
 }
 function drawLine(a, b) {
 
