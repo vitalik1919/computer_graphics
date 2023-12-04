@@ -10,12 +10,12 @@ function drawCartesian() {
     ctx.strokeStyle = 'black';
     ctx.moveTo(centerX, 0);
     ctx.lineTo(centerX, canvas.height);
+
+    ctx.moveTo(0, centerY);
+    ctx.lineTo(canvas.width, centerY);
     ctx.stroke();
 
     ctx.beginPath();
-    ctx.moveTo(0, centerY);
-    ctx.lineTo(canvas.width, centerY);
-
     for(let i = 10; i < 480; i += 10) {
         ctx.moveTo(centerX - 5, i);
         ctx.lineTo(centerX + 5, i);
@@ -27,19 +27,33 @@ function drawCartesian() {
     ctx.stroke();
 
     ctx.beginPath();
-    ctx.strokeStyle = 'rgba(180, 180, 180, 0.5)';
+    ctx.strokeStyle = 'rgba(180, 180, 180, 0.3)';
     for (let i = 10; i < canvas.width; i += 10) {
         ctx.moveTo(i, 0);
         ctx.lineTo(i, canvas.height);
     }
-    ctx.stroke();
 
-    ctx.beginPath();
     for (let i = 10; i < canvas.height; i += 10) {
         ctx.moveTo(0, i);
         ctx.lineTo(canvas.width, i);
     }
     ctx.stroke();
+
+    ctx.beginPath();
+    ctx.strokeStyle = 'red';
+    ctx.lineWidth = 2;
+    ctx.moveTo(460, centerY - 20);
+    ctx.lineTo(470, centerY - 10);
+    ctx.moveTo(470, centerY - 20);
+    ctx.lineTo(460, centerY - 10);
+
+    ctx.moveTo(centerX + 20, 20);
+    ctx.lineTo(centerX + 15, 10);
+    ctx.moveTo(centerX + 25, 10);
+    ctx.lineTo(centerX + 17, 25);
+    
+    ctx.stroke();
+    //ctx.moveTo(centerX, )
 
 }
 function drawLine(a, b) {
