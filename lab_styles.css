@@ -1,0 +1,95 @@
+body {
+
+    background-color: #141A26;
+    overflow: hidden;
+}
+.line {
+    position: absolute;
+    width: 93px;
+    height: 0px;
+    left: 183px;
+    top: 95px;
+    border: 2px solid #1A1D3E;
+}
+
+.labs-section {
+    margin-top: 9.5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.labs-section .moving-images, .color-schemes, .fractals {
+    background-color: #C6CCDC;
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+    height: 70vh;
+    border-radius: 30px;
+}
+.labs-section .moving-images:hover, .color-schemes:hover, .fractals:hover {
+    box-shadow: 0 0 20px #BAC5FFFF; 
+    cursor: pointer;
+}
+.labs-section .moving-images:active, .color-schemes:active, .fractals:active {
+    box-shadow: 0 0 20px #5B20D9FF; 
+    cursor: pointer;
+}
+
+.title {
+    padding-top: 2%;
+    padding-left: 2%;
+    width: auto;
+    font-family: 'Secular One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+    line-height: 51px;
+    text-align: left;
+    color: #1A1D3E;
+}
+.description {
+    padding-left: 2%;
+    font-family: 'Secular One';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 1.25vw;
+    line-height: 29px;
+    color: #1A1D3E;
+}
+
+
+.fractals-image {
+    background-image: url('resources/fractals-image.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px 30px 0px 0px;
+    max-width: 100vmax;
+    max-height: 40%;
+}
+.colors-image {
+    background-image: url('resources/colors-image.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px 30px 0px 0px;
+    max-width: 100vmax;
+    max-height: 40%;
+}
+.affine-image {
+    background-image: url('resources/affine-image.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px 30px 0px 0px;
+    max-width: 100vmax;
+    max-height: 40%;
+}

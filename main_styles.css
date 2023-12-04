@@ -1,0 +1,44 @@
+body {
+    background-image: url('resources/background.png'); 
+    background-size: cover;
+    overflow: hidden;
+}
+.line {
+    position: absolute;
+    width: 58px;
+    height: 0px;
+    left: -32px;
+    top: 95px;
+    border: 2px solid #1A1D3E;
+}
+
+.title-text-1 {
+    position: absolute;
+    right: 72px;
+    top: 180px;
+    width: 573px;
+    height: 78px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Syncopate;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 45px;
+}
+.title-text-2 {
+    position: absolute;
+    right: -95px;
+    top: 260px;
+    width: 573px;
+    height: 78px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Syncopate;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 45px;
+}

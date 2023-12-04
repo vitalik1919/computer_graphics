@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GraphiTech | Color Schemes</title>
+    <link href='https://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="color_styles.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function() {
+           $("#nav-menu").load("nav_menu.html");
+        });
+    </script>
+    
+</head>
+
+<body>
+    
+    <div id="nav-menu"></div>
+
+    <div class="title">Color Schemes</div>
+    <div class="content-container">
+        <div class="yellow-container">
+            <div class="lightness">
+                <div id="light-lever" class="lever"></div>
+            </div>
+            <div class="saturation">
+                <div id="saturation-lever" class="lever"></div>
+            </div>
+        </div>
+        <div class="schemes-container">
+            <div id="cmyk" class="cmyk">CMYK:</div>
+            <div id="hsl" class="hsl">HSL:</div>
+            <div id="pipette" class="pipette"></div>
+        </div>
+    </div>
+
+    <div class="canvas-container">
+        <div id="color-canvas" class="color-canvas"></div>
+        <div class="button-container">
+            <div id="upload-button" class="upload-button">
+                <div class="button-text">Upload Image...</div>
+                <input type="file" id="fileInput" accept="image/*" style="display: none;">
+            </div>
+            <div id="save-button" class="save-button">
+                <div class="button-text">Save Image</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="nav_menu.js"></script>
+    <script src="color_schemes.js"></script>
+
+</body>
+
+</html>

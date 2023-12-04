@@ -1,0 +1,77 @@
+body {
+    background: #141A26;
+    overflow: hidden;
+}
+.line {
+    position: absolute;
+    width: 92px;
+    height: 0px;
+    left: 57px;
+    top: 95px;
+    border: 2px solid #1A1D3E;
+}
+
+.learning-container {
+    margin-top: 9.5%;
+    margin-left: 5%;
+    margin-right: 10%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.tab-container {
+    background: rgba(255, 255, 255, 0.16);
+    display: flex;
+    flex-direction: column;
+    height: 76vh;
+    min-width: 26vh;
+    width: 26vh;
+    border-radius: 5vh;
+}
+.tab {
+    padding-bottom: 1%;
+    margin-left: 5%;
+    width: 90%;
+    font-family: 'Secular One';
+    color: rgba(255, 255, 255, 0.28);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.7vw;
+    line-height: 29px;
+    margin-top: 25%;
+    text-align: center;
+}
+.tab:hover {
+    color: rgba(255, 255, 255, 0.42);
+    cursor: pointer;
+}
+.tab:active {
+    color: rgba(255, 255, 255, 0.9);
+}
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.title {
+    font-family: 'Secular One';
+    color: white;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.50vw;
+    line-height: 29px;
+}
+.text-container {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: 'Secular One';
+    color: white;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 1.1vw;
+    line-height: 29px;
+    text-align:justify;
+}

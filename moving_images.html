@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GraphiTech | Moving Images</title>
+    <link href='https://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="moving_styles.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function() {
+           $("#nav-menu").load("nav_menu.html");
+        });
+    </script>
+
+</head>
+<body>
+
+    <div id="nav-menu"></div>
+
+    <div class="title">Moving Images</div>
+    <div class="full-container">
+        <div class="content-container">
+            <div class="sub-title">
+                Enter three vertices:
+            </div>
+            <div class="vertices-container">
+                <div class="enter-text">A = </div>
+                <input class="enter-value" value="70, 120" pattern="[0-9,]+"></input>
+                <div class="enter-text">B = </div>
+                <input class="enter-value" value="120, 170" pattern="[0-9,]+"></input>
+                <div class="enter-text">C = </div>
+                <input class="enter-value" value="170, 170" pattern="[0-9,]+"></input>
+            </div>
+            <div class="sub-title">
+                Enter the coefficients for y = ax + b:
+            </div>
+            <div class="line-container">
+                <div class="enter-text">a = </div>
+                <input class="enter-value" value="-1" type="number"></input>
+                <div class="enter-text">b = </div>
+                <input class="enter-value" value="0" type="number"></input>
+            </div>
+            <div class="sub-title">
+                Enter the offset for movement:
+            </div>
+            <div class="offset-container">
+                <div class="enter-text">offset X = </div>
+                <input class="enter-value" value="0" type="number"></input>
+                <div class="enter-text">offset Y = </div>
+                <input class="enter-value" value="0" type="number"></input>
+            </div>
+        </div>
+        <div class="canvas-container">
+            <canvas class="myCanvas" id="myCanvas" width="480" height="480"></canvas>
+            <div class="build-button" id="build-button"><div class="button-text">Build  &  Move</div></div>
+        </div>
+        
+    </div>
+
+    <script src="nav_menu.js"></script>
+    <script src="moving_images.js"></script>
+
+</body>
+</html>
+
+

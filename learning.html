@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GraphiTech | Learning</title>
+    <link rel="stylesheet" type="text/css" href="learning_styles.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function() {
+           $("#nav-menu").load("nav_menu.html");
+        });
+    </script>
+
+</head>
+
+<body>
+    
+    <div id="nav-menu"></div>
+
+    <div class="learning-container">
+
+        <div class="tab-container">
+            <div id="fractals" class="tab">Fractals</div>
+            <div id="colors" class="tab">Color Schemes</div>
+            <div id="moving" class="tab">Moving Images</div>
+        </div>
+
+        <div class="info-container">
+            <div class="title"></div>
+            <div class="text-container"></div>
+            <div class="image-container"></div>
+        </div>
+
+    </div>
+
+    <script src="nav_menu.js"></script>
+    <script src="learning.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GraphiTech | Testing</title>
+
+    <link rel="stylesheet" type="text/css" href="test_styles.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function() {
+           $("#nav-menu").load("nav_menu.html");
+        });
+    </script>
+
+</head>
+
+<body>
+    
+    <div id="nav-menu"></div>
+
+    <div class="container">
+        <div class="test-numbers">
+            <div class="number">1</div>
+            <div class="number">2</div>
+            <div class="number">3</div>
+            <div class="number">4</div>
+            <div class="number">5</div>
+            <div class="number">6</div>
+            <div class="number">7</div>
+            <div class="number">8</div>
+            <div class="number">9</div>
+            <div class="number">10</div>
+            <div class="number">11</div>
+            <div class="number">12</div>
+            <div class="number">13</div>
+            <div class="number">14</div>
+            <div class="number">15</div>
+        </div>
+        <div class="test-container">
+
+            <div class="question">Question Question Question?</div>
+                <div class="option-container" id="op1">
+                    <div class="radio-outer">
+                        <div class="radio-inner"></div>
+                    </div>
+                    <div class="option-text">ANSWER ANSWER ANSWER</div>
+                </div>
+                <div class="option-container" id="op2">
+                    <div class="radio-outer">
+                        <div class="radio-inner"></div>
+                    </div>
+                    <div class="option-text">ANSWER ANSWER ANSWER ANSWER</div>
+                </div>
+                <div class="option-container" id="op3">
+                    <div class="radio-outer">
+                        <div class="radio-inner"></div>
+                    </div>
+                    <div class="option-text">ANSWER ANSWER</div>
+                </div>
+                <div class="option-container" id="op4">
+                    <div class="radio-outer">
+                        <div class="radio-inner"></div>
+                    </div>
+                    <div class="option-text">ANNSWER ANSWER ANSWER</div>
+                </div>
+
+                <div class="button-container">
+                    <div id="submit-button" class="submit-button">SUBMIT</div>
+                </div>
+        </div>
+    </div>
+
+    <script src="nav_menu.js"></script>
+    <script src="testing.js"></script>
+
+</body>
+
+</html>
